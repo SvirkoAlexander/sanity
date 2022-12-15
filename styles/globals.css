@@ -2,7 +2,7 @@
 html,
 body,
 * {
-  padding: 0;
+  padding: 0px 0px;
   margin: 0;
   font-family: Cinzel;
   box-sizing: border-box;
@@ -19,6 +19,7 @@ a {
 .main-container {
   max-width: 1400px;
   margin: auto;
+  padding: 0;
   width: 100%;
 }
 .layout {
@@ -140,14 +141,14 @@ span.text-red {
 
 .hero-banner-container {
   padding: 120px 40px;
-  background: linear-gradient(rgba(0, 0, 0, 0.477), rgba(0, 0, 0, 0.615)),
-    url("../image/cosmitics-bg2.jpg") no-repeat center center;
+  background: rgba(90, 20, 20, 0.456) no-repeat center center;
   background-size: cover;
   border-radius: 15px;
   position: relative;
   height: 600px;
   line-height: 1.8;
   width: 100%;
+  z-index: 0;
 }
 .hero-banner-container .beats-solo {
   font-size: 20px;
@@ -175,6 +176,7 @@ span.text-red {
   font-size: 19px;
   color: #adebf7;
   margin-left: -20px;
+  text-shadow: 3px 3px 5px rgb(1, 26, 32), 0 0 1em #2aa9b7a9, 0 0 0.9em #adebf7;
 }
 
 .hero-banner-container h3 {
@@ -182,13 +184,14 @@ span.text-red {
   font-size: 1.5rem;
   margin-top: 4px;
   color: #adebf7;
+  text-shadow: 3px 3px 5px rgb(1, 26, 32), 0 0 1em #2aa9b7a9, 0 0 0.9em #adebf7;
 }
 .hero-banner-container h1 {
   color: white;
   font-size: 5rem;
   margin-left: -20px;
   text-transform: uppercase;
-  text-shadow: 1px 1px 2px red, 0 0 1em #adebf7, 0 0 0.2em #adebf7;
+  text-shadow: 2px 2px 2px red, 0 0 1em #adebf7, 0 0 0.2em #adebf7;
 }
 .hero-banner-image {
   animation: home 15s linear infinite;
@@ -252,9 +255,9 @@ span.text-red {
   font-weight: 200;
 }
 .footer-banner-container {
+  text-shadow: 3px 3px 5px rgb(1, 26, 32), 0 0 1em #2aa9b7a9, 0 0 0.9em #adebf7;
   padding: 30px 40px;
-  background: linear-gradient(rgba(0, 0, 0, 0.477), rgba(0, 0, 0, 0.615)),
-    url("../image/footer.jpg") no-repeat center center;
+  background: no-repeat center center;
   background-size: cover;
   border-radius: 15px;
   position: relative;
@@ -263,6 +266,7 @@ span.text-red {
   color: whitesmoke;
   width: 100%;
   margin-top: 120px;
+  z-index: 2 !important;
 }
 .banner-desc {
   display: flex;
@@ -352,10 +356,9 @@ span.text-red {
   height: 100vh;
   width: 600px;
   background: linear-gradient(
-      rgba(74, 6, 75, 0.859),
-      rgba(102, 165, 179, 0.587)
-    ),
-    url("../image/cart4.jpg") no-repeat center / 100% 100%;
+    rgba(95, 8, 97, 0.982),
+    rgba(18, 181, 217, 0.801)
+  );
   float: right;
   padding: 40px 10px;
   position: relative;
@@ -813,7 +816,11 @@ span.text-red {
 }
 
 @media screen and (max-width: 428px) {
+  .layout {
+    padding: 10px;
+  }
   .hero-banner-container {
+    width: 100vw;
     height: 600px;
     padding: 50px 30px;
   }
@@ -864,12 +871,18 @@ span.text-red {
     line-height: 1.3;
   }
   .hero-banner-container h1 {
-    font-size: 50px;
+    font-size: 45px;
     margin-top: 45px;
   }
   .hero-banner-container h3 {
-    font-size: 25px;
+    font-size: 20px;
     margin-top: 0px;
+  }
+  .hero-banner-container h2 {
+    margin-top: 30px;
+  }
+  .hero-banner-container .beats-solo {
+    font-size: 15px;
   }
   .hero-banner-container button {
     margin-top: 80px;
@@ -892,7 +905,7 @@ span.text-red {
         rgba(74, 6, 75, 0.859),
         rgba(102, 165, 179, 0.587)
       ),
-      url("../image/cart4.jpg") no-repeat center / 130% 100%;
+      no-repeat center / 130% 100%;
     float: right;
     padding: 40px 10px;
     position: relative;
@@ -990,6 +1003,7 @@ span.text-red {
     right: -6%;
     z-index: 0;
   }
+
   .footer-banner-container {
     height: 560px;
     margin-top: 80px;
@@ -1003,6 +1017,7 @@ span.text-red {
     margin: 10px 0px 0px 0;
     z-index: 000;
   }
+
   .banner-desc .left h3 {
     font-weight: 900;
     font-size: 20px;
@@ -1029,13 +1044,17 @@ span.text-red {
     line-height: 1.3;
   }
   .hero-banner-container h1 {
-    font-size: 50px;
+    font-size: 40px;
     margin-top: 45px;
   }
   .hero-banner-container h3 {
-    font-size: 22px;
+    font-size: 20px;
     margin-top: 0px;
   }
+  .hero-banner-container .beats-solo {
+    font-size: 15px;
+  }
+
   .hero-banner-container button {
     margin-top: 80px;
   }
@@ -1054,10 +1073,10 @@ span.text-red {
     padding: 4px;
     border-radius: 10px;
     background: linear-gradient(
-        rgba(74, 6, 75, 0.859),
+        rgba(126, 5, 129, 0.859),
         rgba(102, 165, 179, 0.587)
       ),
-      url("../image/cart4.jpg") no-repeat center / 130% 100%;
+      no-repeat center / 130% 100%;
     float: right;
     padding: 40px 10px;
     position: relative;

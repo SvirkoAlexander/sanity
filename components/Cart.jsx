@@ -1,3 +1,4 @@
+
 import Link from "next/link";
 import { useRef } from "react";
 import {
@@ -44,8 +45,8 @@ const Cart = () => {
   };
 
   return (
-    <div className="cart-wrapper" ref={cartRef}>
-      <div className="cart-container">
+		<div className="cart-wrapper" ref={cartRef}>
+			<div className="cart-container">
         <button
           type="button"
           className="cart-heading"

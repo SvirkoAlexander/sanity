@@ -1,4 +1,5 @@
 import Link from "next/link";
+import bg from "../image/footer2.jpg";
 import { urlFor } from "../lib/client";
 
 const FooterBanner = ({
@@ -16,7 +17,12 @@ const FooterBanner = ({
   },
 }) => {
   return (
-    <div className="footer-banner-container">
+    <div
+      className="footer-banner-container"
+      style={{
+        backgroundImage: `url(${bg.src})`,
+      }}
+    >
       <div className="banner-desc">
         <div className="left">
           <p>{discount}</p>
@@ -30,8 +36,7 @@ const FooterBanner = ({
           <p>{desc}</p>
           <Link href={`/product/${product}`}>
             <button type="button">{buttonText}</button>
-					</Link>
-					
+          </Link>
         </div>
 
         <img src={urlFor(image)} className="footer-banner-image" />
