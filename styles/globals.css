@@ -2,7 +2,7 @@
 html,
 body,
 * {
-  padding: 0px 0px;
+  padding: 0;
   margin: 0;
   font-family: Cinzel;
   box-sizing: border-box;
@@ -18,18 +18,16 @@ a {
 
 .main-container {
   max-width: 1400px;
-  margin: auto;
-  padding: 0;
-  width: 100%;
+  margin: 0 auto;
 }
 .layout {
-  padding: 10px;
+  padding: 0px 15px ;
 }
 
 .navbar-container {
   display: flex;
   justify-content: space-between;
-  margin: 0px 10px;
+  margin: 0px 0px;
   position: relative;
 }
 .LOGO {
@@ -141,7 +139,7 @@ span.text-red {
 
 .hero-banner-container {
   padding: 120px 40px;
-  background: rgba(90, 20, 20, 0.456) no-repeat center center;
+  background: no-repeat center center;
   background-size: cover;
   border-radius: 15px;
   position: relative;
@@ -162,6 +160,7 @@ span.text-red {
   padding: 10px 12px;
   background-color: #f02d2d;
   color: white;
+	border: none;
   margin-top: 40px;
   font-size: 18px;
   font-weight: 600;
@@ -199,10 +198,10 @@ span.text-red {
   margin: 0 0px 0px 0;
   cursor: pointer;
   position: absolute;
-  top: 15%;
+  top: 10%;
   right: 6%;
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   z-index: 0 !important;
 }
 
@@ -280,7 +279,7 @@ span.text-red {
   padding: 10px 16px;
   background-color: white;
   color: red;
-  border-color: red;
+	border: none;
   margin-top: 70px;
   font-size: 20px;
   font-weight: 700;
@@ -344,7 +343,7 @@ span.text-red {
 }
 .cart-wrapper {
   width: 100vw;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, .7);
   position: fixed;
   right: 0;
   top: 0;
@@ -356,8 +355,8 @@ span.text-red {
   height: 100vh;
   width: 600px;
   background: linear-gradient(
-    rgba(95, 8, 97, 0.982),
-    rgba(18, 181, 217, 0.801)
+    rgb(197, 10, 200),
+    rgb(17, 161, 193)
   );
   float: right;
   padding: 40px 10px;
@@ -513,14 +512,14 @@ span.text-red {
   display: flex;
   gap: 40px;
   margin: 40px;
-  margin-top: 60px;
-  color: #324d67;
+  margin-top: 10px;
+  color: #23394d;
 }
 
 .product-detail-image {
   border-radius: 15px;
   background-color: rgba(255, 192, 203, 0.391);
-  width: 400px;
+  width: 450px;
   height: 400px;
   cursor: pointer;
   transition: 0.3s ease-in-out;
@@ -586,6 +585,7 @@ span.text-red {
 }
 .buttons .add-to-cart {
   padding: 10px 20px;
+	border-radius: 15px;
   border: 1px solid #f02d34;
   margin-top: 40px;
   font-size: 18px;
@@ -603,6 +603,7 @@ span.text-red {
 .buttons .buy-now {
   width: 200px;
   padding: 10px 20px;
+	border-radius: 15px;
   background-color: #f02d34;
   color: white;
   border: none;
@@ -650,7 +651,7 @@ span.text-red {
 .maylike-products-container {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 20px;
   margin-top: 20px;
 }
 .max-qty {
@@ -711,10 +712,11 @@ span.text-red {
   margin-top: 10px;
 }
 
-@media screen and (min-width: 768px) and (min-height: 1000px) {
+@media screen and (min-width: 768px) and (min-height: 1024px) {
   .main-container {
-    width: 990px;
+    width: 980px;
   }
+	
   .hero-banner-container {
     height: 600px;
     padding: 50px 30px;
@@ -723,8 +725,8 @@ span.text-red {
     margin: 20px 20px 0 0;
     width: 400px;
     height: 400px;
-    top: 23%;
-    right: -6%;
+    top: 35%;
+    right: 10%;
     z-index: 0;
   }
   .hero-banner-container {
@@ -780,7 +782,7 @@ span.text-red {
     display: flex;
     width: 900px;
     justify-content: space-between;
-    margin: 0px 10px;
+    margin: 20px 10px;
     position: relative;
   }
   .cart-icon {
@@ -813,33 +815,33 @@ span.text-red {
   .cart-heading {
     margin-top: 20px;
   }
+	.marquee{
+		width: 980px;
+	}
 }
 
-@media screen and (max-width: 428px) {
-  .layout {
-    padding: 10px;
-  }
+
+@media screen and (max-width: 430px) {
   .hero-banner-container {
-    width: 100vw;
     height: 600px;
-    padding: 50px 30px;
+    padding: 60px 30px;
+    margin: auto;
   }
   .hero-banner-image {
     margin: 140px 0px 0px 0;
-    width: 300px;
-    height: 300px;
-    top: 23%;
-    right: -6%;
+    width: 200px;
+    height: 200px;
+    top: 35%;
+    right: 5%;
     z-index: 0;
   }
   .footer-banner-container {
     height: 560px;
     margin-top: 80px;
   }
-
   .footer-banner-image {
     width: 55%;
-    left: 60%;
+    left: 50%;
     top: 57%;
     height: 40%;
     margin: 10px 0px 0px 0;
@@ -892,30 +894,42 @@ span.text-red {
   }
   .product-detail-container {
     flex-wrap: wrap;
+    gap: 20px;
+    margin: 0;
+    margin-top: 1px;
+    color: #23394d;
   }
-  .product-detail-container .product-detail-image {
-    width: 365px;
-    height: 350px;
+  .product-detail-image {
+    border-radius: 15px;
+    background-color: rgba(255, 192, 203, 0.391);
+    width:350px;
+    height: 300px;
+    margin: 0;
+    transition: 0.3s ease-in-out;
   }
+  .product-detail-desc {
+   width: 350px;
+  }
+
   .cart-container {
-    width: 350px;
-    padding: 4px;
+    width: 340px;
     border-radius: 10px;
     background: linear-gradient(
-        rgba(74, 6, 75, 0.859),
-        rgba(102, 165, 179, 0.587)
-      ),
-      no-repeat center / 130% 100%;
+    rgb(197, 10, 200),
+    rgb(17, 161, 193)
+  );
     float: right;
-    padding: 40px 10px;
+    padding: 1px 2px;
     position: relative;
   }
+  .cart-wrapper {
+    width: 450px;
+    height: 1000px;
+  }
   .cart-heading {
-    margin-top: 35px;
+    margin-top: 30px;
   }
-  .product-container {
-    margin-top: 10px;
-  }
+
   .product {
     padding: 20px 5px;
   }
@@ -932,9 +946,6 @@ span.text-red {
   .buttons .buy-now {
     width: 170px;
   }
-  .product-detail-container {
-    margin: 20px;
-  }
 
   .item-desc .flex {
     width: 200px;
@@ -988,186 +999,7 @@ span.text-red {
   .btn {
     font-size: 15px;
   }
-}
-
-@media screen and (max-width: 390px) {
-  .hero-banner-container {
-    height: 600px;
-    padding: 50px 30px;
-  }
-  .hero-banner-image {
-    margin: 140px 0px 0px 0;
-    width: 250px;
-    height: 250px;
-    top: 25%;
-    right: -6%;
-    z-index: 0;
-  }
-
-  .footer-banner-container {
-    height: 560px;
-    margin-top: 80px;
-  }
-
-  .footer-banner-image {
-    width: 55%;
-    left: 60%;
-    top: 57%;
-    height: 40%;
-    margin: 10px 0px 0px 0;
-    z-index: 000;
-  }
-
-  .banner-desc .left h3 {
-    font-weight: 900;
-    font-size: 20px;
-  }
-  .banner-desc .left p {
-    margin: 30px 30px;
-    font-size: 20px;
-    line-height: 1;
-  }
-  .banner-desc .right h3 {
-    font-size: 20px;
-  }
-  .banner-desc .right p {
-    font-size: 13px;
-  }
-  .banner-desc .right .company-desc {
-    font-size: 14px;
-  }
-  .banner-desc {
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  .hero-banner-container {
-    line-height: 1.3;
-  }
-  .hero-banner-container h1 {
-    font-size: 40px;
-    margin-top: 45px;
-  }
-  .hero-banner-container h3 {
-    font-size: 20px;
-    margin-top: 0px;
-  }
-  .hero-banner-container .beats-solo {
-    font-size: 15px;
-  }
-
-  .hero-banner-container button {
-    margin-top: 80px;
-  }
-  .desc {
-    bottom: 20px;
-  }
-  .product-detail-container {
-    flex-wrap: wrap;
-  }
-  .product-detail-container .product-detail-image {
-    width: 330px;
-    height: 330px;
-  }
-  .cart-container {
-    width: 350px;
-    padding: 4px;
-    border-radius: 10px;
-    background: linear-gradient(
-        rgba(126, 5, 129, 0.859),
-        rgba(102, 165, 179, 0.587)
-      ),
-      no-repeat center / 130% 100%;
-    float: right;
-    padding: 40px 10px;
-    position: relative;
-  }
-  .cart-heading {
-    margin-top: 35px;
-  }
-  .products-heading h2 {
-    font-size: 30px;
-  }
-  .product-container {
-    margin-top: 10px;
-  }
-  .product {
-    padding: 20px 5px;
-  }
-  .product .cart-product-image {
-    width: 25%;
-    height: 25%;
-  }
-  .buttons .add-to-cart {
-    width: 150px;
-    height: 50px;
-    font-size: 17px;
-  }
-  .buttons .buy-now {
-    width: 150px;
-    height: 50px;
-    font-size: 17px;
-  }
-  .product-detail-container {
-    margin: 20px;
-  }
-
-  .item-desc .flex {
-    width: 200px;
-  }
-  .top {
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-  .item-desc .bottom {
-    margin-top: 30px;
-  }
-  .flex h5 {
-    font-size: 16px;
-    color: #adebf7;
-  }
-  .flex h4 {
-    font-size: 16px;
-    color: #adebf7;
-  }
-  .cart-bottom {
-    padding: 30px;
-  }
-  .maylike-products-wrapper h2 {
-    font-size: 24px;
-    margin-top: -20px;
-  }
-
-  .total h3 {
-    font-size: 20px;
-  }
-  .track {
-    animation: marquee 10s linear infinite;
-    width: 550%;
-  }
-  .success-wrapper,
-  .cancel-wrapper {
-    min-height: 69vh;
-  }
-  .success,
-  .cancel {
-    width: 370px;
-    margin-top: 100px;
-    padding: 20px;
-  }
-  .success {
-    height: 350px;
-  }
-  .success h2 {
-    font-size: 17px;
-  }
-  .btn-container {
-    width: 300px;
-    margin: auto;
-  }
-  .footer-container p {
-    font-size: 12px;
-  }
-  .btn {
-    font-size: 15px;
-  }
+	.maylike-products-wrapper h2{
+		font-size: 20px;
+	}
 }
