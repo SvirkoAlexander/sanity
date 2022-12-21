@@ -6,6 +6,7 @@ body,
   margin: 0;
   font-family: Cinzel;
   box-sizing: border-box;
+  font-size: 0.9rem;
 }
 ::-webkit-scrollbar {
   width: 0px;
@@ -17,14 +18,15 @@ a {
 }
 
 .main-container {
-  max-width: 1400px;
+  max-width: 1600vw;
   margin: 0 auto;
 }
 .layout {
-  padding: 0px 15px ;
+  padding: 0px 15px;
 }
 
 .navbar-container {
+  max-width: 2000vw;
   display: flex;
   justify-content: space-between;
   margin: 0px 0px;
@@ -79,6 +81,7 @@ span.text-red {
   font-size: 15px;
 }
 .cart-icon {
+  right: 5px;
   font-size: 25px;
   color: gray;
   cursor: pointer;
@@ -88,16 +91,16 @@ span.text-red {
   background-color: transparent;
 }
 .cart-icon:hover {
-  transform: scale(1.1, 1.1);
+  transform: scale(1.5, 1.5);
 }
 .cart-item-qty {
   position: absolute;
   right: -8px;
-  font-size: 12px;
+  font-size: 13px;
   color: #eee;
   background-color: #f02d34;
-  width: 18px;
-  height: 18px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   text-align: center;
   font-weight: 600;
@@ -127,13 +130,14 @@ span.text-red {
 }
 
 .product-name {
+  font-size: 20px;
   text-align: center;
-  font-weight: 500;
+  font-weight: 700;
 }
 .product-price {
   text-align: center;
-  font-weight: 800;
-  margin-top: 6px;
+  font-weight: 100;
+  margin-top: 2px;
   color: black;
 }
 
@@ -160,7 +164,7 @@ span.text-red {
   padding: 10px 12px;
   background-color: #f02d2d;
   color: white;
-	border: none;
+  border: none;
   margin-top: 40px;
   font-size: 18px;
   font-weight: 600;
@@ -279,7 +283,7 @@ span.text-red {
   padding: 10px 16px;
   background-color: white;
   color: red;
-	border: none;
+  border: none;
   margin-top: 70px;
   font-size: 20px;
   font-weight: 700;
@@ -331,7 +335,7 @@ span.text-red {
 }
 .banner-desc .right h3 {
   font-weight: 800;
-  font-size: 50px;
+  font-size: 40px;
 }
 .banner-desc .right p {
   font-size: 20px;
@@ -343,7 +347,7 @@ span.text-red {
 }
 .cart-wrapper {
   width: 100vw;
-  background: rgba(0, 0, 0, .7);
+  background: rgba(0, 0, 0, 0.7);
   position: fixed;
   right: 0;
   top: 0;
@@ -354,10 +358,7 @@ span.text-red {
 .cart-container {
   height: 100vh;
   width: 600px;
-  background: linear-gradient(
-    rgb(197, 10, 200),
-    rgb(17, 161, 193)
-  );
+  background: linear-gradient(rgb(0, 0, 0), rgb(17, 161, 193));
   float: right;
   padding: 40px 10px;
   position: relative;
@@ -468,15 +469,16 @@ span.text-red {
   color: #adebf7;
 }
 .total h3 {
-  font-size: 22px;
+  font-size: 23px;
 }
 .remove-item {
-  font-size: 24px;
+  font-size: 30px;
   color: #f02d34;
   cursor: pointer;
   background: transparent;
   border: none;
 }
+
 .cart-bottom {
   position: absolute;
   bottom: 12px;
@@ -551,6 +553,10 @@ span.text-red {
   align-items: center;
 }
 
+.product-detail-desc h1 {
+  font-size: 25px;
+}
+
 .product-detail-desc h4 {
   margin-top: 10px;
 }
@@ -585,7 +591,7 @@ span.text-red {
 }
 .buttons .add-to-cart {
   padding: 10px 20px;
-	border-radius: 15px;
+  border-radius: 15px;
   border: 1px solid #f02d34;
   margin-top: 40px;
   font-size: 18px;
@@ -603,7 +609,7 @@ span.text-red {
 .buttons .buy-now {
   width: 200px;
   padding: 10px 20px;
-	border-radius: 15px;
+  border-radius: 15px;
   background-color: #f02d34;
   color: white;
   border: none;
@@ -618,24 +624,25 @@ span.text-red {
   transform: scale(1.1, 1.1);
 }
 .quantity-desc {
-  border: 1px solid #adebf7;
-  padding: 6px;
+  border: 1px solid #ed0e0e;
+  padding: 3px 1px;
+  border-radius: 5px;
 }
 .quantity-desc span {
-  font-size: 16px;
-  padding: 6px 12px;
+  font-size: 20px;
+  padding: 2px 10px;
   cursor: pointer;
 }
 .quantity-desc .minus {
   border-right: 1px solid gray;
-  color: #adebf7;
+  color: #15b342;
 }
 .quantity-desc .num {
-  border-right: 1px solid gray;
+  border-right: 1px solid rgb(128, 128, 128);
   font-size: 20px;
 }
 .quantity-desc .plus {
-  color: #adebf7;
+  color: #ed0b0b;
 }
 
 .maylike-products-wrapper {
@@ -712,11 +719,10 @@ span.text-red {
   margin-top: 10px;
 }
 
-@media screen and (min-width: 768px) and (min-height: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   .main-container {
     width: 980px;
   }
-	
   .hero-banner-container {
     height: 600px;
     padding: 50px 30px;
@@ -761,15 +767,15 @@ span.text-red {
     font-size: 20px;
   }
   .banner-desc .left p {
-    margin: 30px 30px;
-    font-size: 20px;
-    line-height: 1;
+    margin: 30px 0px;
+    font-size: 30px;
+    line-height: 3;
   }
   .banner-desc .right h3 {
-    font-size: 20px;
+    font-size: 30px;
   }
   .banner-desc .right p {
-    font-size: 13px;
+    font-size: 15px;
   }
   .banner-desc .right .company-desc {
     font-size: 14px;
@@ -780,9 +786,8 @@ span.text-red {
   }
   .navbar-container {
     display: flex;
-    width: 900px;
+    width: 920px;
     justify-content: space-between;
-    margin: 20px 10px;
     position: relative;
   }
   .cart-icon {
@@ -795,7 +800,7 @@ span.text-red {
     display: flex;
     gap: 20px;
     margin: 20px;
-    margin-top: 40px;
+    margin-top: 0;
     color: #324d67;
   }
 
@@ -815,11 +820,102 @@ span.text-red {
   .cart-heading {
     margin-top: 20px;
   }
-	.marquee{
-		width: 980px;
-	}
+  .marquee {
+    width: 980px;
+  }
 }
 
+@media screen and (min-width: 431px) and (max-width: 768px) {
+  .main-container {
+    width: 980px;
+  }
+  .navbar-container {
+    width: 785px;
+    padding-right: 20px;
+  }
+  .product-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-banner-container {
+    height: 600px;
+    padding: 60px 30px;
+    margin: auto;
+  }
+  .hero-banner-image {
+    margin: 140px 0px 0px 0;
+    width: 300px;
+    height: 300px;
+    top: 22%;
+    right: 22%;
+    z-index: 0;
+  }
+  .cart-container {
+    width: 500px;
+    height: 1020px;
+    padding: 4px;
+    border-radius: 10px;
+  }
+  .cart-wrapper {
+    width: 800px;
+    height: 1020px;
+  }
+  .cart-heading {
+    margin-top: 20px;
+  }
+  .footer-banner-image {
+    width: 35%;
+    left: 50%;
+    top: 45%;
+    height: 65%;
+    margin: 10px 0px 0px 0;
+    z-index: 000;
+  }
+  .footer-banner-container {
+    height: 470px;
+    margin-top: 80px;
+  }
+  .footer-container {
+    width: 768px;
+  }
+  .cart-icon {
+    margin-right: -210px;
+  }
+  .maylike-products-wrapper {
+    width: 1000px;
+  }
+  .product-detail-container {
+    display: flex;
+    gap: 20px;
+    margin: 20px;
+    margin-top: 0;
+    color: #324d67;
+  }
+
+  .footer-container {
+    width: 1000px;
+  }
+  .cart-container {
+    width: 600px;
+    height: 1200px;
+    padding: 4px;
+    border-radius: 10px;
+  }
+  .cart-wrapper {
+    width: 1050px;
+    height: 1200px;
+  }
+  .cart-heading {
+    margin-top: 20px;
+  }
+  .marquee {
+    width: 980px;
+  }
+  .banner-desc {
+    line-height: 2.5;
+  }
+}
 
 @media screen and (max-width: 430px) {
   .hero-banner-container {
@@ -870,54 +966,52 @@ span.text-red {
     gap: 20px;
   }
   .hero-banner-container {
-    line-height: 1.3;
+    line-height: 1.2;
   }
   .hero-banner-container h1 {
-    font-size: 45px;
+    font-size: 40px;
     margin-top: 45px;
   }
   .hero-banner-container h3 {
-    font-size: 20px;
+    font-size: 15px;
     margin-top: 0px;
   }
   .hero-banner-container h2 {
-    margin-top: 30px;
-  }
-  .hero-banner-container .beats-solo {
+    margin-top: 10px;
     font-size: 15px;
   }
+  .hero-banner-container .beats-solo {
+    font-size: 10px;
+  }
   .hero-banner-container button {
-    margin-top: 80px;
+    margin-top: 100px;
   }
   .desc {
     bottom: 20px;
   }
   .product-detail-container {
     flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
-    margin: 0;
-    margin-top: 1px;
+    margin: auto;
     color: #23394d;
   }
   .product-detail-image {
     border-radius: 15px;
     background-color: rgba(255, 192, 203, 0.391);
-    width:350px;
+    width: 350px;
     height: 300px;
     margin: 0;
     transition: 0.3s ease-in-out;
   }
   .product-detail-desc {
-   width: 350px;
+    width: 350px;
   }
 
   .cart-container {
     width: 340px;
     border-radius: 10px;
-    background: linear-gradient(
-    rgb(197, 10, 200),
-    rgb(17, 161, 193)
-  );
+    background: linear-gradient(rgb(0, 0, 0), rgb(17, 161, 193));
     float: right;
     padding: 1px 2px;
     position: relative;
@@ -999,7 +1093,18 @@ span.text-red {
   .btn {
     font-size: 15px;
   }
-	.maylike-products-wrapper h2{
-		font-size: 20px;
-	}
+  .maylike-products-wrapper h2 {
+    font-size: 20px;
+  }
+  .products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  .footer-container p {
+    font-size: 11px;
+  }
 }

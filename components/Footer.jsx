@@ -5,11 +5,11 @@ import { SlSocialVkontakte } from "react-icons/sl";
 const Footer = () => {
   return (
     <div className="footer-container">
-      <p>2022 Giftedvision All rights reserved.</p>
+      <p> &#169; 2022 Develoded Giftedvision. All rights reserved.</p>
       <p className="icons">
-        <AiFillInstagram />
-        <SlSocialVkontakte />
-        <RiTelegramLine />
+        <AiFillInstagram size={20}/>
+        <SlSocialVkontakte size={20}/>
+        <RiTelegramLine size={20}/>
       </p>
     </div>
   );
